@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text to Handwriting</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			padding: 20px;
+			background-color: #4CAF50;
+			color: white;
+			margin: 0;
+		}
+		form {
+			max-width: 600px;
+			margin: auto;
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+			color: #333;
+		}
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: none;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 18px;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<h1>Text to Handwriting</h1>
+	<form action="/generate" method="POST">
+		<label for="text">Enter your text:</label>
+		<textarea id="text" name="text" rows="10" cols="50"></textarea>
+		<input type="submit" value="Generate">
+	</form>
+</body>
+</html>
